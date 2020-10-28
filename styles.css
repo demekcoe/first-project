@@ -1,13 +1,48 @@
-#column-1{
-  background: lightblue;
-  height: 300px;
-}
-#column-2{
-  background: lightgreen;
-  height: 300px;
-}
-#column-3{
-  background: lightcoral;
-  height: 300px;
+#introduction{
+  /* background: lightblue; */
+  height: 100vh;
 }
 
+#alert{
+  background: #a72707;
+  color: white;
+  height: 200px;
+  transform: 0.5s;
+  opacity: 0;
+  animation: slide-up 1s ease-in 0.5s forwards;
+}
+
+#title {
+  padding: 70px 0;
+}
+
+@keyframes slide-up {
+  from{
+    transform: translateY(300px)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+
+#mission{
+  /* background: lightgreen; */
+  height: 100vh;
+}
+#examples{
+  /* background: lightcoral; */
+  height: 100vh;
+}
+
+.number {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  background: #005191;
+  position: relative;
+  padding-top: 10px;
+  color: white;
+  font-size: 2em;
+  margin: auto;
+}
